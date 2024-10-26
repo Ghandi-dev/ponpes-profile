@@ -10,10 +10,9 @@
                         <img data-aos="fade-up" src="<?php echo base_url(); ?>assets/img/logo.png" alt=""
                             class="img-fluid w-70">
                         <p data-aos="fade-up" class="mt-2 text-white text-capitalize">
-                            Selamat datang di website resmi<br>
-                            pondok
-                            pesantren
-                            al-muthohhar<br>
+                            Selamat datang<br> di website resmi<br>
+                            pondok pesantren<br>
+                            al-muthohhar
                             purwakarta
                         </p>
                         <a data-aos="fade-up" data-aos-delay="200" href="#kata-pengantar"
@@ -98,7 +97,7 @@
 
                 <div class="row position-relative">
 
-                    <div class="col-lg-7 about-img" style="background-image: url(assets/img/about.jpg);"></div>
+                    <div class="col-lg-7 about-img" style="background-image: url(assets/img/tentang.jpg);"></div>
 
                     <div class="col-lg-7">
                         <h2>Tentang Ponpes<br> Al-Muthohhar</h2>
