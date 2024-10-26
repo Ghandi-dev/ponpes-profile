@@ -100,7 +100,7 @@ section {
 .section-header h2:before,
 .section-header h2:after {
   content: "";
-  width: 20px;
+  width: 10px;
   height: 2px;
   background: var(--color-primary);
   display: inline-block;
@@ -1207,7 +1207,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .about h2 {
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   font-family: var(--font-secondary);
   margin: 30px 0;
