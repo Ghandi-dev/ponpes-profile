@@ -100,7 +100,7 @@ section {
 .section-header h2:before,
 .section-header h2:after {
   content: "";
-  width: 10px;
+  width: 25px;
   height: 2px;
   background: var(--color-primary);
   display: inline-block;
