@@ -23,11 +23,14 @@
         </div>
         <!-- carousel -->
         <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/carousel1.jpg)">
+            <div class="carousel-item active"
+                style="background-image: url(<?php echo base_url(); ?>assets/img/hero-carousel/carousel1.jpg)">
             </div>
-            <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/carousel2.jpg)">
+            <div class="carousel-item"
+                style="background-image: url(<?php echo base_url(); ?>assets/img/hero-carousel/carousel2.jpg)">
             </div>
-            <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/carousel3.jpg)">
+            <div class="carousel-item"
+                style="background-image: url(<?php echo base_url(); ?>assets/img/hero-carousel/carousel3.jpg)">
             </div>
             <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -42,7 +45,7 @@
     <main id="main">
 
         <!-- ======= Kata Pengantar Section ======= -->
-        <section id="kata-pengantar" class="kata-pengantar">
+        <section id="kata-pengantar" class="kata-pengantar section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
                     <h2>معهد التربية الإسلامية المطهر</h2>
@@ -81,7 +84,7 @@
                         <div class="card-item">
                             <div class="post-item position-relative h-100">
                                 <div class="post-img position-relative overflow-hidden">
-                                    <img src="<?php echo base_url(); ?>assets/img/pimpinan.jpg"
+                                    <img src="<?php echo base_url(); ?>assets/img/pimpinan2.jpg"
                                         class="img-fluid rounded" alt="">
                                 </div>
                             </div>
@@ -92,12 +95,13 @@
         </section><!-- End Kata Pengantar Section -->
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about section-bg">
+        <section id="about" class="about ">
             <div class="container" data-aos="fade-up">
 
                 <div class="row position-relative">
 
-                    <div class="col-lg-7 about-img" style="background-image: url(assets/img/tentang.jpg);"></div>
+                    <div class="col-lg-7 about-img"
+                        style="background-image: url(<?php echo base_url(); ?>assets/img/tentang.jpg);"></div>
 
                     <div class="col-lg-7">
                         <h2>Tentang Ponpes<br> Al-Muthohhar</h2>
@@ -125,7 +129,7 @@
                             <div class="watch-video d-flex align-items-center position-relative">
                                 <i class="bi bi-play-circle"></i>
                                 <a href="https://www.youtube.com/watch?v=DnIv0xntGW0"
-                                    class="glightbox stretched-link">Watch Video</a>
+                                    class="glightbox stretched-link">Tonton Video</a>
                             </div>
                         </div>
                     </div>
@@ -137,7 +141,7 @@
         <!-- End about Section -->
 
         <!-- ======= Program Kepesantrenan Section ======= -->
-        <section id="kepesantrenan" class="kepesantrenan">
+        <section id="kepesantrenan" class="kepesantrenan section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
                     <h2>Program Unggulan</h2>
