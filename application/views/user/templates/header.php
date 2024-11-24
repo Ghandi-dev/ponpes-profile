@@ -18,7 +18,7 @@
                         <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
                         <li><a href="<?php echo base_url('user/profil/profil_pengasuh') ?>"
-                                class="<?php echo $title == 'profil-pengasuh' ? 'active' : '' ?>">Profil
+                                class="<?php echo $title == 'profil-pengasuh' ? 'active' : '' ?>">Profil Pendiri dan
                                 Pengasuh</a>
                         </li>
                         <li><a href="<?php echo base_url('user/profil/visi_misi') ?>"
@@ -28,7 +28,7 @@
                 <li class="dropdown"><a href="#"><span>Pendidikan</span> <i
                             class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                        <li><a href="<?php echo base_url('user/program_unggulan') ?>">Program Unggulan</a></li>
+                        <li><a href="<?php echo base_url('user/pendidikan/form') ?>">Program Unggulan</a></li>
                         <li><a href="<?php echo base_url('user/tenaga_pendidik') ?>">Tenaga Pendidik</a></li>
                     </ul>
                 </li>

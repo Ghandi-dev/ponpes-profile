@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Profil extends CI_Controller
+class Pendidikan extends CI_Controller
 {
 
     public function index()
@@ -10,10 +10,10 @@ class Profil extends CI_Controller
         $this->load->view('user/profil/index', $data);
     }
 
-    public function profil_pengasuh()
+    public function form()
     {
-        $data['title'] = 'profil-pengasuh';
-        $this->load->view('user/profil/profil_pendiri', $data);
+        $data['title'] = 'form';
+        $this->load->view('user/pendidikan/index', $data);
     }
 
     public function visi_misi()

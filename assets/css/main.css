@@ -743,6 +743,10 @@ section {
   margin: 0;
 }
 
+#program-kegiatan {
+  height: auto;
+}
+
 /*--------------------------------------------------------------
 # kepesantrenan Section
 --------------------------------------------------------------*/
@@ -1220,6 +1224,10 @@ section {
     max-width: 65%;
     margin: 0 0 20px 0;
   }
+  .section-header h2 {
+    font-size: 32px;
+    max-width: 100%;
+  }
 }
 
 .about .our-story {
@@ -1291,19 +1299,26 @@ section {
   background-position: center;
 }
 
+#visi-misi {
+  height: auto;
+}
 @media (min-width: 992px) {
   .about .about-img {
     position: absolute;
     top: 0;
     right: 0;
   }
+  #visi-misi {
+    height: 100vh;
+  }
 }
+
 
 /*--------------------------------------------------------------
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter .stats-item {
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0px 0 30px rgba(82, 86, 94, 0.05);
   padding: 30px;
 }
@@ -1327,6 +1342,12 @@ section {
   margin: 0;
   font-family: var(--font-primary);
   font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  #stats-counter {
+    height: 200px;
+  }
 }
 
 /*--------------------------------------------------------------

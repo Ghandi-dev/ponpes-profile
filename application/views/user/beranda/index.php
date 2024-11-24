@@ -97,12 +97,12 @@
         <!-- ======= About Section ======= -->
         <section id="about" class="about ">
             <div class="container" data-aos="fade-up">
-
+                <div class="section-header">
+                    <h2>Profil Singkat</h2>
+                </div>
                 <div class="row position-relative">
-
                     <div class="col-lg-7 about-img"
-                        style="background-image: url(<?php echo base_url(); ?>assets/img/tentang.jpg);"></div>
-
+                        style="background-image: url(<?php echo base_url(); ?>assets/img/bangunan.png);"></div>
                     <div class="col-lg-7">
                         <h2>Tentang Ponpes<br> Al-Muthohhar</h2>
                         <div class="our-story">
@@ -140,102 +140,137 @@
         </section>
         <!-- End about Section -->
 
-        <!-- ======= Program Kepesantrenan Section ======= -->
-        <section id="kepesantrenan" class="kepesantrenan section-bg">
+        <!-- ======= Stats Counter Section ======= -->
+        <section id="stats-counter" class="stats-counter mt-2 mb-2"
+            style="background-image: url(<?php echo base_url(); ?>assets/img/bg_static_footer.png);">
+            <div class="container">
+                <div class="row gy-4 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="bi bi-people color-pink flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"
+                                    class="purecounter"></span>
+                                <p>Pengajar</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="fa fa-user color-pink flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="1000"
+                                    data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Santri Aktif</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item d-flex align-items-center w-100 h-100">
+                            <i class="fa fa-user-graduate color-pink flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="10000"
+                                    data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Alumni</p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+                </div>
+
+            </div>
+        </section><!-- End Stats Counter Section -->
+
+        <!-- ======= Program Kegiatan Section ======= -->
+        <section id="program-kegiatan" class="kata-pengantar section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
-                    <h2>Program Unggulan</h2>
+                    <h2>Program Kegiatan</h2>
                 </div>
                 <div class="row gy-4">
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item  position-relative">
-                            <div class="icon">
-                                <i class="fa-solid fa-book-quran"></i>
+                    <div class="col-lg-6 px-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
+                            <div class="row border border-1 border-dark">
+                                <div class="col-xl-5 p-0">
+                                    <div class="card-bg"
+                                        style="background-image: url(<?php echo base_url(); ?>assets/img/constructions-1.jpg);">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem
+                                            placeat deleniti
+                                            adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo
+                                            magnam. Dolor eos et.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Tahfizul Quran</h3>
-                            <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores
-                                iure
-                                perferendis
-                                tempore et consequatur.</p>
-                            <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                                    class="bi bi-arrow-right"></i></a>
                         </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-                                <i class="fa-solid fa-book-quran"></i>
+                    </div><!-- End Card Item -->
+                    <div class="col-lg-6 px-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
+                            <div class="row border border-1 border-dark">
+                                <div class="col-xl-5 p-0">
+                                    <div class="card-bg"
+                                        style="background-image: url(<?php echo base_url(); ?>assets/img/constructions-1.jpg);">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem
+                                            placeat deleniti
+                                            adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo
+                                            magnam. Dolor eos et.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Ilmu Tafsir</h3>
-                            <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum
-                                hic
-                                non ut
-                                nesciunt dolorem.</p>
-                            <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                                    class="bi bi-arrow-right"></i></a>
                         </div>
-                    </div><!-- End Service Item -->
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-                                <i class="fa-solid fa-book-quran"></i>
+                    </div><!-- End Card Item -->
+                    <div class="col-lg-6 px-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
+                            <div class="row border border-1 border-dark">
+                                <div class="col-xl-5 p-0">
+                                    <div class="card-bg"
+                                        style="background-image: url(<?php echo base_url(); ?>assets/img/constructions-1.jpg);">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem
+                                            placeat deleniti
+                                            adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo
+                                            magnam. Dolor eos et.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Ilmu Tauhid</h3>
-                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                voluptas
-                                adipisci
-                                eos earum corrupti.</p>
-                            <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                                    class="bi bi-arrow-right"></i></a>
                         </div>
-                    </div><!-- End Service Item -->
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-                                <i class="fa-solid fa-book-quran"></i>
+                    </div><!-- End Card Item -->
+                    <div class="col-lg-6 px-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
+                            <div class="row border border-1 border-dark">
+                                <div class="col-xl-5 p-0">
+                                    <div class="card-bg"
+                                        style="background-image: url(<?php echo base_url(); ?>assets/img/constructions-1.jpg);">
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Eligendi omnis sunt veritatis.</h4>
+                                        <p>Fuga in dolorum et iste et culpa. Commodi possimus nesciunt modi voluptatem
+                                            placeat deleniti
+                                            adipisci. Cum delectus doloribus non veritatis. Officia temporibus illo
+                                            magnam. Dolor eos et.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3>Ilmu Nahwu</h3>
-                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                voluptas
-                                adipisci
-                                eos earum corrupti.</p>
-                            <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                                    class="bi bi-arrow-right"></i></a>
                         </div>
-                    </div><!-- End Service Item -->
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-                                <i class="fa-solid fa-book-quran"></i>
-                            </div>
-                            <h3>Ilmu Shorof</h3>
-                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                voluptas
-                                adipisci
-                                eos earum corrupti.</p>
-                            <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div><!-- End Service Item -->
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-                                <i class="fa-solid fa-book-quran"></i>
-                            </div>
-                            <h3>Ilmu Tajwid</h3>
-                            <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id
-                                voluptas
-                                adipisci
-                                eos earum corrupti.</p>
-                            <a href="service-details.html" class="readmore stretched-link">Learn more <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div><!-- End Service Item -->
+                    </div><!-- End Card Item -->
                 </div>
+
             </div>
-        </section><!-- End kepesantrenan Section -->
+        </section><!-- End Program Kegiatan Section -->
         <!-- End Recent Blog Posts Section -->
     </main><!-- End #main -->
 </div>
