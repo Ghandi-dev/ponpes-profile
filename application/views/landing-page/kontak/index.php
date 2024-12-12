@@ -37,6 +37,7 @@
                             </a>
                             <h3>WhatsApp</h3>
                             <p>+62 813-8121-4060</p>
+                            <p>&nbsp;</p>
                         </div>
                     </div><!-- End Info Item -->
 

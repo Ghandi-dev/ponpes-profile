@@ -23,8 +23,8 @@
                     <h2>Tenaga Pendidik</h2>
                     <p>Berikut susunan tenaga pendidik Pondok Pesantren Al-Muthohhar</p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="card shadow p-3">
                             <table class="table table-striped">
                                 <thead>
@@ -36,17 +36,43 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>Mark</td>
+                                        <td>KH. Sholeh Rafeie BA</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
-                                        <td>Jacob</td>
+                                        <td>KH. Muhyidin Murtadho</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
+                                        <td>KH. Ahmad Thoha Bakri S.Hi M.Pd</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>KH. Ahmad Sayuti M.Pd</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Muhammad Hilman Marzuki</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Ustad Wawan Kustiwan</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Ustad Fuad Hasan</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Muhammad Hamdan</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>Ustad Elvin Alkabrie S.Pd</td>
                                     </tr>
                                 </tbody>
+                            </table>
+
                             </table>
                         </div>
                     </div>
