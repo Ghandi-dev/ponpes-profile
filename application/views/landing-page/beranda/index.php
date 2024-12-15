@@ -8,7 +8,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                         <img data-aos="fade-up" src="<?php echo base_url(); ?>assets/landing-page/img/logo.png" alt=""
-                            class="img-fluid w-70">
+                            class="img-fluid w-50">
                         <p data-aos="fade-up" class="mt-2 text-white text-capitalize">
                             Selamat datang<br> di website resmi<br>
                             pondok pesantren<br>
