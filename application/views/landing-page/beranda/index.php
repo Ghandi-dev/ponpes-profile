@@ -138,46 +138,6 @@
         </section>
         <!-- End about Section -->
 
-        <!-- ======= Stats Counter Section ======= -->
-        <section id="stats-counter" class="stats-counter mt-2 mb-2"
-            style="background-image: url(<?php echo base_url(); ?>assets/landing-page/img/bg_static_footer.png);">
-            <div class="container">
-                <div class="row gy-4 d-flex align-items-center justify-content-center">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="bi bi-people color-pink flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p>Pengajar</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="fa fa-user color-pink flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="1000"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Santri Aktif</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item d-flex align-items-center w-100 h-100">
-                            <i class="fa fa-user-graduate color-pink flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="10000"
-                                    data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Alumni</p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-                </div>
-
-            </div>
-        </section><!-- End Stats Counter Section -->
-
         <!-- ======= Program Kegiatan Section ======= -->
         <section id="program-kegiatan" class="kata-pengantar section-bg">
             <div class="container" data-aos="fade-up">

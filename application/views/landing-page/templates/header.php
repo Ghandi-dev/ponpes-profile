@@ -18,8 +18,8 @@
                         <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
                         <li><a href="<?php echo base_url('landing-page/profil/profil_pengasuh') ?>"
-                                class="<?php echo $title == 'profil-pengasuh' ? 'active' : '' ?>">Profil Pendiri dan
-                                Pimpinan Ponpes</a>
+                                class="<?php echo $title == 'profil-pengasuh' ? 'active' : '' ?>">Profil Pendiri Pondok
+                                Pesantren</a>
                         </li>
                         <li><a href="<?php echo base_url('landing-page/profil/visi_misi') ?>"
                                 class="<?php echo $title == 'visi-misi' ? 'active' : '' ?>">Visi dan Misi</a></li>
