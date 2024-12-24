@@ -48,7 +48,7 @@ class Pembayaran extends CI_Controller
                 $this->session->set_flashdata('success', 'Pembayaran Berhasil Divalidasi');
             }
         } else {
-            $catatan = $this->input->post('catatan');
+            $catatan = $this->input->get('catatan');
             $data['pembayaran'] = array(
                 'status_pembayaran' => '2',
                 'catatan' => $catatan,

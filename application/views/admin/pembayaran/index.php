@@ -71,9 +71,10 @@ foreach ($pembayaran as $row): ?>
                                                         class="btn btn-sm btn-success text-white fst-italic">Validasi
                                                         <span class="bi bi-check"></span>
                                                     </a>
-                                                    <a href="<?=base_url('admin/pembayaran/validasi/tolak/' . $row->id . '/' . $row->id_siswa)?>"
-                                                        class="btn btn-sm btn-danger text-white fst-italic">Tolak X
-                                                        <span class="bi bi-cross"></span>
+                                                    <a href="javascript:void(0);"
+                                                        class="btn btn-sm btn-danger text-white fst-italic btn-tolak"
+                                                        data-id="<?=$row->id;?>" data-id-siswa="<?=$row->id_siswa;?>">
+                                                        Tolak X <span class="bi bi-cross"></span>
                                                     </a>
                                                 </div>
                                             </td>
@@ -89,7 +90,7 @@ foreach ($pembayaran as $row): ?>
             </div>
         </section>
     </main>
-    <!-- Modal -->
+    <!-- Modal Bukti Pembayaran -->
     <div class="modal fade" id="modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -106,6 +107,32 @@ foreach ($pembayaran as $row): ?>
             </div>
         </div>
     </div>
+    <!-- Modal Penolakan -->
+    <div class="modal fade" id="modalTolak" tabindex="-1" role="dialog" aria-labelledby="modalTolakLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTolakLabel">Catatan Penolakan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formTolak">
+                        <div class="form-group">
+                            <label for="catatan">Catatan</label>
+                            <textarea class="form-control" id="catatan" name="catatan" rows="3"
+                                placeholder="Masukkan alasan penolakan"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="submitTolak">Tolak</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php $this->load->view('templates/script');?>
     <script>
     // Gunakan querySelectorAll jika fungsi `select` tidak ada
@@ -168,9 +195,46 @@ foreach ($pembayaran as $row): ?>
             icon: 'error',
             confirmButtonText: 'OK'
         });
+
+
         <?php endif;?>
     });
     </script>
+    <!-- Modal Penolakan -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let tolakButton = document.querySelectorAll('.btn-tolak');
+        let modalTolak = new bootstrap.Modal(document.getElementById('modalTolak'));
+        let submitTolak = document.getElementById('submitTolak');
+        let catatanInput = document.getElementById('catatan');
+
+        let tolakUrl = "";
+
+        // Event listener untuk membuka modal
+        tolakButton.forEach(button => {
+            button.addEventListener('click', function() {
+                let id = this.getAttribute('data-id');
+                let idSiswa = this.getAttribute('data-id-siswa');
+                tolakUrl =
+                    `<?=base_url('admin/pembayaran/validasi/tolak/')?>${id}/${idSiswa}`;
+                modalTolak.show();
+            });
+        });
+
+        // Event listener untuk tombol submit
+        submitTolak.addEventListener('click', function() {
+            let catatan = catatanInput.value.trim();
+            if (!catatan) {
+                alert('Harap masukkan catatan alasan penolakan.');
+                return;
+            }
+
+            // Redirect ke URL dengan catatan
+            window.location.href = `${tolakUrl}?catatan=${encodeURIComponent(catatan)}`;
+        });
+    });
+    </script>
+
 </body>
 
 </html>
