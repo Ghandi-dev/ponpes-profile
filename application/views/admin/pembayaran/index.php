@@ -22,7 +22,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Kelola Pembayaran</h5>
+                            <h5 class="card-title">Validasi Pembayaran</h5>
                         </div>
                     </div>
                 </div>

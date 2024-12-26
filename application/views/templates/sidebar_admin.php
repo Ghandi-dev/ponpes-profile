@@ -16,7 +16,7 @@
             <a class="nav-link <?php echo $title != 'Kelola Pembayaran' ? 'collapsed' : '' ?>"
                 href=" <?php echo base_url('admin/pembayaran') ?>">
                 <i class="bi bi-cash"></i>
-                <span>Kelola Pembayaran</span>
+                <span>Validasi Pembayaran</span>
             </a>
         </li><!-- End Kelola Pembayaran Nav -->
 

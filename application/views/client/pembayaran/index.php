@@ -102,7 +102,6 @@
                                     <p>
                                         <?=isset($pembayaran->catatan) ? '* Catatan alasan penolakan: ' . $pembayaran->catatan : '';?>
                                     </p>
-
                                 </div>
                             </div>
                         </div>

@@ -11,6 +11,7 @@ class Siswa extends CI_Controller
         }
 
         $this->load->model('Siswa_model');
+        $this->load->model('User_model');
         $this->load->model('OrangTua_model');
         $this->load->model('Alamat_model');
         $this->load->model('Berkas_model');
@@ -217,6 +218,16 @@ class Siswa extends CI_Controller
 
         // Redirect ke formulir
         redirect('admin/siswa/edit/' . $id);
+    }
+
+    public function delete($id)
+    {
+        if (!$this->User_model->delete_user($id)) {
+            $this->session->set_flashdata('error', 'Terjadi kesalahan saat menghapus pengguna.');
+            redirect('admin/siswa');
+        }
+        $this->session->set_flashdata('success', 'Data siswa berhasil dihapus.');
+        redirect('admin/siswa');
     }
 
     public function get_provinces()

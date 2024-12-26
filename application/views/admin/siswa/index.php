@@ -52,7 +52,7 @@ foreach ($siswa as $row): ?>
                                                         class="btn btn-sm btn-success text-white fst-italic">Edit
                                                     </a>
                                                     <div class="btn btn-sm btn-danger text-white fst-italic delete"
-                                                        data-id="<?=$row->id?>">Hapus
+                                                        data-id="<?=$row->id_user?>">Hapus
                                                         <span class="bi bi-cross"></span>
                                                     </div>
                                                 </div>

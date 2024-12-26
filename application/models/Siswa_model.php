@@ -19,8 +19,9 @@ class Siswa_model extends CI_Model
     // Fungsi untuk mendapatkan semua pengguna
     public function get_all_siswa()
     {
-        $this->db->select(self::TABLE_NAME . '.*, pendaftaran.status');
+        $this->db->select(self::TABLE_NAME . '.*, pendaftaran.status, user.id as id_user');
         $this->db->from(self::TABLE_NAME);
+        $this->db->join('tb_user as user', 'user.id = ' . self::TABLE_NAME . '.id_user', 'inner');
         $this->db->join('tb_status_pendaftaran as pendaftaran', 'pendaftaran.id_siswa = ' . self::TABLE_NAME . '.id', 'inner'); // Menyesuaikan kolom yang menjadi relasi
         $this->db->where('pendaftaran.status', 'D5'); // Kondisi untuk status
         $query = $this->db->get();
