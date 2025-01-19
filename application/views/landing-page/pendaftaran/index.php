@@ -17,7 +17,7 @@
         <section id="about" class="contact">
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
-                    <h2>Form Pendaftaran</h2>
+                    <h2>Form Pembuatan Akun</h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
