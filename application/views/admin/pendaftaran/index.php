@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php $this->load->view('templates/head');?>
+    <?php $this->load->view('templates/head'); ?>
 </head>
 
 <body>
-    <?php $this->load->view('templates/header');?>
-    <?php $this->load->view('templates/sidebar_admin');?>
+    <?php $this->load->view('templates/header'); ?>
+<?php $this->load->view('templates/sidebar_admin'); ?>
     <main id="main" class="main">
         <section class="section">
             <div class="row">
@@ -34,31 +34,31 @@
                                             <th scope="col">No</th>
                                             <th scope="col">Nama Siswa</th>
                                             <th scope="col">No HP</th>
-                                            <th scope="col">Status Pendaftaran</th>
+                                            <!-- <th scope="col">Status Pendaftaran</th> -->
                                             <th scope="col">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php $no = 1;foreach ($siswa as $row): ?>
                                         <tr class="align-middle text-center">
-                                            <th scope="row"><?=$no;?></th>
-                                            <td><?=$row->nama?></td>
-                                            <td><?=$row->no_hp?></td>
-                                            <td><?=$row->status?></td>
+                                            <th scope="row"><?php echo $no;?></th>
+                                            <td><?php echo $row->nama?></td>
+                                            <td><?php echo $row->no_hp?></td>
+
                                             <td>
                                                 <div class="d-flex justify-content-center gap-2">
-                                                    <a href="<?=base_url('admin/pendaftaran/validasi/ok/' . $row->id)?>"
+                                                    <a href="<?php echo base_url('admin/pendaftaran/validasi/ok/' . $row->id)?>"
                                                         class="btn btn-sm btn-success text-white fst-italic">Validasi
                                                         <span class="bi bi-check"></span>
                                                     </a>
-                                                    <a href="<?=base_url('admin/pendaftaran/validasi/tolak/' . $row->id)?>"
+                                                    <a href="<?php echo base_url('admin/pendaftaran/validasi/tolak/' . $row->id)?>"
                                                         class="btn btn-sm btn-danger text-white fst-italic">Tolak X
                                                         <span class="bi bi-cross"></span>
                                                     </a>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <?php $no++;endforeach;?>
+                                        <?php $no++;endforeach; ?>
                                     </tbody>
                                 </table>
                             </div> <!-- Tutup div table-responsive -->
@@ -69,7 +69,7 @@
             </div>
         </section>
     </main>
-    <?php $this->load->view('templates/script');?>
+    <?php $this->load->view('templates/script'); ?>
     <script>
     // Gunakan querySelectorAll jika fungsi `select` tidak ada
     const datatables = document.querySelectorAll('.datatable');
@@ -98,7 +98,7 @@
             icon: 'error',
             confirmButtonText: 'OK'
         });
-        <?php endif;?>
+        <?php endif; ?>
     });
     </script>
 </body>
