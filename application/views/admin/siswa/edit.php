@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php $this->load->view('templates/head');?>
+    <?php $this->load->view('templates/head'); ?>
 </head>
 
 <body>
-    <?php $this->load->view('templates/header');?>
-    <?php $this->load->view('templates/sidebar_admin');?>
+    <?php $this->load->view('templates/header'); ?>
+<?php $this->load->view('templates/sidebar_admin'); ?>
     <main id="main" class="main">
         <section class="section">
             <div class="row">
@@ -53,12 +53,12 @@
                                         method="post">
                                         <h5 class="card-title mb-0 pb-0">Data Pribadi Siswa</h5>
                                         <hr>
-                                        <?php $this->load->view('admin/siswa/layout/form_data_siswa');?>
+                                        <?php $this->load->view('admin/siswa/layout/form_data_siswa'); ?>
                                         <h5 class="card-title mb-0 pb-0">Data Orang Tua Siswa</h5>
                                         <hr>
-                                        <?php $this->load->view('admin/siswa/layout/form_data_ayah');?>
-                                        <hr>
-                                        <?php $this->load->view('admin/siswa/layout/form_data_ibu');?>
+                                        <?php $this->load->view('admin/siswa/layout/form_data_ayah'); ?>
+                                        <!-- <hr>
+                                        <?php// $this->load->view('admin/siswa/layout/form_data_ibu');?> -->
                                         <div class="row d-flex justify-content-start mt-3">
                                             <div class="col-md-3">
                                                 <button type="submit" class="btn btn-primary w-100">Simpan</button>
@@ -73,7 +73,7 @@
                                         method="post">
                                         <h5 class="card-title mb-0 pb-0">Data Alamat Siswa</h5>
                                         <hr>
-                                        <?php $this->load->view('admin/siswa/layout/form_data_alamat');?>
+                                        <?php $this->load->view('admin/siswa/layout/form_data_alamat'); ?>
                                         <div class="row d-flex justify-content-start mt-3">
                                             <div class="col-md-3">
                                                 <button type="submit" class="btn btn-primary w-100">Simpan</button>
@@ -88,7 +88,7 @@
                                         method="post" enctype="multipart/form-data">
                                         <h5 class="card-title mb-0 pb-0">Data Berkas Siswa</h5>
                                         <hr>
-                                        <?php $this->load->view('admin/siswa/layout/form_data_berkas');?>
+                                        <?php $this->load->view('admin/siswa/layout/form_data_berkas'); ?>
                                         <div class="row d-flex justify-content-start mt-3">
                                             <div class="col-md-3">
                                                 <button type="submit" class="btn btn-primary w-100">Simpan</button>
@@ -103,7 +103,7 @@
                 </div>
         </section>
     </main>
-    <?php $this->load->view('templates/script');?>
+    <?php $this->load->view('templates/script'); ?>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         <?php if ($this->session->flashdata('success')): ?>
@@ -120,21 +120,21 @@
             icon: 'error',
             confirmButtonText: 'OK'
         });
-        <?php endif;?>
+        <?php endif; ?>
     });
     </script>
 
     <script>
     $(document).ready(function() {
         // ID yang sudah tersimpan di database
-        let provinsiSelected = "<?=$alamat->provinsi ?? ''?>";
-        let kabupatenSelected = "<?=$alamat->kabupaten ?? ''?>";
-        let kecamatanSelected = "<?=$alamat->kecamatan ?? ''?>";
-        let desaSelected = "<?=$alamat->desa ?? ''?>";
+        let provinsiSelected = "<?php echo $alamat->provinsi ?? ''?>";
+        let kabupatenSelected = "<?php echo $alamat->kabupaten ?? ''?>";
+        let kecamatanSelected = "<?php echo $alamat->kecamatan ?? ''?>";
+        let desaSelected = "<?php echo $alamat->desa ?? ''?>";
 
         // Muat daftar provinsi dan tetapkan opsi yang sesuai
         $.ajax({
-            url: "<?=base_url('admin/siswa/get_provinces');?>",
+            url: "<?php echo base_url('admin/siswa/get_provinces');?>",
             type: "GET",
             dataType: "json",
             success: function(response) {
@@ -157,7 +157,7 @@
 
             if (id_provinsi) {
                 $.ajax({
-                    url: `<?=base_url('admin/siswa/get_regencies');?>/${id_provinsi}`,
+                    url: `<?php echo base_url('admin/siswa/get_regencies');?>/${id_provinsi}`,
                     type: "GET",
                     dataType: "json",
                     success: function(response) {
@@ -183,7 +183,7 @@
 
             if (id_kabupaten) {
                 $.ajax({
-                    url: `<?=base_url('admin/siswa/get_districts');?>/${id_kabupaten}`,
+                    url: `<?php echo base_url('admin/siswa/get_districts');?>/${id_kabupaten}`,
                     type: "GET",
                     dataType: "json",
                     success: function(response) {
@@ -209,7 +209,7 @@
 
             if (id_kecamatan) {
                 $.ajax({
-                    url: `<?=base_url('admin/siswa/get_villages');?>/${id_kecamatan}`,
+                    url: `<?php echo base_url('admin/siswa/get_villages');?>/${id_kecamatan}`,
                     type: "GET",
                     dataType: "json",
                     success: function(response) {
